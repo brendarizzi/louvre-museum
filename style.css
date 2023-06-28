@@ -1,0 +1,499 @@
+@font-face {
+    font-family: 'gill';
+    src: url(../fonts/gill-sans-mt-pro-medium.otf);
+}
+
+@font-face {
+    font-family: 'gillBold';
+    src: url(../fonts/gill-sans-mt-pro-bold.ttf);
+}
+
+/* Colors */
+:root {
+    --page-main-bg-color: #f6f6f6;
+    --page-color-red: #bb302b;
+    --page-color-green: #3a5e20;
+    --page-color-black: #101010;
+    --page-color-yellow: #e5aa46;
+    --page-color-blue: #2459A5;
+    --page-color-custom-bg: #fdf6e6;
+    --page-color-red-hover: #b12d29;
+    --page-color-green-hover: #33541c;
+    --page-color-black-hover: #2a2a2a;
+    --page-color-yellow-hover: rgb(239, 180, 79);
+    --page-color-blue-hover: #215296;
+    --page-color-gold-hover: #7F6B18;
+}
+
+body {
+    font-family: 'gill', serif;
+    background-color: var(--page-main-bg-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'gillBold', serif;
+    font-weight: 600;
+}
+
+h2,
+h3 {
+    font-weight: 700;
+}
+
+h2 {
+    padding-bottom: 0.625rem;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+/* BUTTONS */
+.btn {
+    font-weight: 700;
+    border-radius: 0;
+}
+
+.btn-black {
+    color: white;
+    background-color: var(--page-color-black);
+}
+
+.btn-black:hover {
+    background-color: var(--page-color-black-hover);
+    color: white;
+}
+
+.division-section {
+    background-color: var(--page-color-black);
+}
+
+/* ICONS */
+.bi {
+    font-size: 1.65rem;
+}
+
+@media screen and (min-width: 768px) {
+    .bi {
+        font-size: 1.735rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .bi {
+        font-size: 2rem;
+    }
+}
+
+/* NAVBAR-HEADER */
+nav {
+    background-color: var(--page-color-black);
+}
+
+header .navbar-nav .nav-link {
+    font-size: 1rem;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: white;
+}
+
+.navbar-nav .active a {
+    color: white;
+}
+
+.navbar {
+    font-weight: 700;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+.nav-link {
+    color: white;
+}
+
+@media screen and (min-width: 992px) {
+    header .navbar-nav .nav-link {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header .navbar-nav .nav-link {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header .navbar-nav .nav-link:hover {
+        color: black;
+        text-decoration-line: underline;
+        text-underline-offset: 1.25rem;
+        text-decoration-color: var(--page-color-gold-hover);
+        text-decoration-thickness: 5px;
+    }
+
+    header .navbar-nav .nav-link-gold:hover {
+        text-decoration-color: var(--page-color-gold-hover);
+    }
+}
+
+/* LOGO */
+.museum-logo {
+    width: 1.5625rem;
+}
+
+.museum-logo-text {
+    width: 5.625rem;
+}
+
+@media screen and (min-width: 768px) {
+    .museum-logo {
+        width: 2.1875rem;
+    }
+    .museum-logo-text {
+        width: 7.8125rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .museum-logo {
+        width: 3.125rem;
+    }
+    .museum-logo-text {
+        width: 10.9375rem;
+    }
+}
+
+/* CAROUSEL */
+#carouselHome .carousel-caption {
+    position: absolute;
+    right: 30%;
+    left: 6%;
+    padding-bottom: 6.25rem;
+}
+
+#carouselHome .carousel-title {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@media screen and (min-width: 768px) {
+    #carouselHome .carousel-caption {
+        right: 30%;
+        left: 6%;
+        bottom: 20%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #carouselHome .carousel-caption {
+        left: 3%;
+        right: 60%;
+    }
+}
+
+/* Article */
+#article-main {
+    padding: 3.125rem 0;
+}
+
+/* Services */
+#services {
+    padding: 3.125rem 0;
+}
+
+#services .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-color: var(--page-main-bg-color);
+    text-align: left;
+    
+}
+
+#services .card-title{
+    font-family: 'gillBold';
+}
+
+#services-more {
+    background-color: #1a1a1a;
+}
+
+#services-more .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-color: #1a1a1a;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#services-more .card-title{
+    font-family: 'gillBold';
+}  
+
+/* CONTENT */
+#content {
+    margin: 50px 0;
+}
+
+/* ARTWORK */
+#artwork {
+    margin: 3.125rem 0;
+}
+
+#artwork .card {
+    overflow: hidden;
+}
+
+#artwork .card-title,
+#artwork p,
+#artwork .card {
+    transition: 0.6s ease;
+}
+
+#artwork .card-img {
+    opacity: 0.5;
+    transition: 1s ease;
+}
+
+#artwork .card:hover .card-img {
+    opacity: 0.15;
+    transition: 0.5s ease;
+    transform: scale(1.15);
+    overflow: hidden;
+}
+
+#artwork .card:hover {
+    transition: 0.5s ease;
+    box-shadow: 0.625rem 0.625rem 0 0 var(--page-color-black);
+    -webkit-box-shadow: 0.625rem 0.625rem 0 0 var(--page-color-black);
+    -moz-box-shadow: 0.625rem 0.625rem 0 0 var(--page-color-black);
+}
+
+#artwork .card:hover .card-title {
+    transition: 0.6s ease;
+    color: var(--page-color-gold-hover);
+}
+
+
+/* Feed */
+#feed {
+    margin-bottom: 50px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: #101010;
+    border-radius: 3.125rem;
+}
+
+#feed img {
+    border: 0.1875rem solid var(--page-color-yellow);
+}
+
+.feed-rate {
+    color: var(--page-color-yellow);
+}
+
+/* EVENT */
+#event {
+    margin: 50px 0;
+}
+
+#event .card {
+    border: 0;
+}
+
+/* Tickets */
+#tickets .card {
+    border: none;
+    background: none;
+}
+
+#tickets .card-header-special {
+    background: var(--page-color-blue);
+    color: white;
+}
+
+#tickets .card-header {
+    background: var(--page-color-green);
+    color: white;
+}
+
+#tickets .card-header-family {
+    background: var(--page-color-red);
+    color: white;
+}
+
+#tickets .card-header-vip {
+    background: var(--page-color-gold-hover);
+    color: white;
+}
+
+#tickets_intro .accordion-item{
+    background-color: var(--page-color-custom-bg);
+}
+
+/* SHOP cart */
+
+#tickets #cart-items {
+    margin-top: 2px;
+}
+
+#tickets .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.9375rem;
+}
+
+#tickets .cart-item img {
+    object-fit: cover;
+    margin-right: 0.625rem;
+}
+
+#tickets .cart-item p {
+    margin: 0;
+}
+
+#tickets .item-details {
+    flex-grow: 1;
+}
+
+#tickets .total-price {
+    font-weight: bold;
+    margin-top: 0.625rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--page-color-black);
+    color: white;
+}
+
+.newsletter {
+    border: 1px solid white;
+}
+
+.newsletter-email {
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+.nav .active a {
+    color: white;
+}
+
+
+#shop {
+    margin-bottom: 3.125rem;
+}
+
+#shop .row .card {
+    background: none;
+    box-shadow: 0 0.25rem 0.5625rem -0.5rem rgba(128, 128, 128, 0.51);
+    -webkit-box-shadow: 0 0.25rem 0.5625rem -0.5rem rgba(128, 128, 128, 0.51);
+    -moz-box-shadow: 0 0.25rem 0.5625rem -0.5rem rgba(128, 128, 128, 0.51);
+}
+
+#shop .row .card img {
+    transition: 0.5s ease;
+}
+
+#shop .row .card img:hover {
+    transition: 1s ease;
+    transform: scale(1.05);
+    border: 0.0625rem solid var(--page-color-yellow);
+    overflow: hidden;
+}
+
+#shop .picture2 {
+    display: none;
+}
+
+#shop .thumbnail:hover .picture1 {
+    display: none;
+}
+
+#shop .thumbnail:hover .picture2 {
+    display: block;
+}
+
+/* SHOP cart */
+
+#shop #cart-items {
+    margin-top: 2px;
+}
+
+#shop .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0rem;
+}
+
+#shop .cart-item img {
+    object-fit: cover;
+    margin-right: 0.625rem;
+}
+
+#shop .cart-item p {
+    margin: 0;
+}
+
+#shop .item-details {
+    flex-grow: 1;
+}
+
+#shop .total-price {
+    font-weight: bold;
+    margin-top: 0.625rem;
+}
+
+/* pastillas de informacion, index */
+#events{
+    margin: auto;
+}
+
+#events .events .card-body{
+    background-color: var(--page-main-bg-color);
+}
+
+#events .events .card-text{
+    text-align: left;
+}
+
+/* historia museo */
+#museum-history{
+    margin: 3.125rem 0;
+}
+
+/* CONTACT */
+#contact {
+    margin-bottom: 3.125rem;
+}
+
+#contact input,
+#contact textarea {
+    border-radius: 0;
+}
+
+#contact .required{
+    color: var(--page-color-red-hover);
+}
